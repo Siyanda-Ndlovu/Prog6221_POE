@@ -35,6 +35,7 @@ namespace Prog6221_POE
             "You can ask me about password safety, Identifying phishing attempt and Safe browsing",
         }; //end of answers array
 
+        
         private void TypeText(string text)
         {
             foreach (char c in text)
@@ -110,6 +111,8 @@ namespace Prog6221_POE
                 TypeText("Hey " + username + ", Welcome to CyberBuddy!,");
                 TypeText("            I'm here to help you stay safe online");
                 TypeText("            What would you like to know about today?");
+                onsole.ForegroundColor = ConsoleColor.Red;
+                TypeText("            Press exit or goodbye to end the program");
                 Console.ResetColor();   //reset color
                 //return true
                 return true;
