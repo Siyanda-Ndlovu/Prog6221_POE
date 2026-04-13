@@ -35,7 +35,7 @@ namespace Prog6221_POE
             "You can ask me about password safety, Identifying phishing attempt and Safe browsing",
         }; //end of answers array
 
-        
+        //This is for typing the text instead of WriteLine
         private void TypeText(string text)
         {
             foreach (char c in text)
